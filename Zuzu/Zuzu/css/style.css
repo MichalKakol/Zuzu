@@ -1,0 +1,5 @@
+.banner {
+  background-image: url("/media/sushi-3.jpg");
+  height: 200px;
+  background-size: cover;
+}
