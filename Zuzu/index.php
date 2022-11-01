@@ -165,11 +165,13 @@
                 </footer>
                 <footer class="col-6 text-light text-center">
                     <p>
-                        Contactgegevens <br />
-                        Appelstraat 1 <br />
-                        1111AA Fruit <br />
-                        zuzu@gmail.com <br />
-                        06-12345678
+                        Maandag: Gesloten <br />
+                        Dinsdag: 16:00-22:00 <br />
+                        Woensdag: 16:00-22:00 <br />
+                        Donderdag: 16:00-22:00 <br />
+                        Vrijdag: 15:00-22:00 <br />
+                        Zaterdag: 15:00-22:00 <br />
+                        Zondag: Gesloten
                     </p>
                 </footer>
             </footer>
