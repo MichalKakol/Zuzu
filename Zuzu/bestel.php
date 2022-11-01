@@ -1,3 +1,15 @@
+<?php
+if (isset($_POST['Verzenden'])) {
+    setcookie("kom", $_POST['kom'], time() + 3600);
+    setcookie("avo", $_POST['avo'], time() + 3600);
+    setcookie("nigirl", $_POST['nigirl'], time() + 3600);
+    setcookie("phil", $_POST['phil'], time() + 3600);
+    setcookie("tuna", $_POST['tuna'], time() + 3600);
+    setcookie("cali", $_POST['cali'], time() + 3600);
+    header('Location: /Zuzu/opsomming.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -44,12 +56,12 @@
             <div class="col-2"></div>
             <section class="col-8">
                 <h1>Sushi's bestellen</h1>
-                <form method="post">
-                    <div class="mb-3">
+                <form method="post" action="">
                         <label for="komkomer" class="form-label"
                         >Maki komkomer (max =5)</label
                         >
                         <input
+                            name="kom"
                             type="number"
                             class="form-control"
                             max="5"
@@ -59,6 +71,7 @@
                         >Maki Avocado (max = 10)</label
                         >
                         <input
+                            name="avo"
                             type="number"
                             class="form-control"
                             max="10"
@@ -68,6 +81,7 @@
                         >Nigirl zalm (max = 10)</label
                         >
                         <input
+                            name="nigirl"
                             type="number"
                             class="form-control"
                             max="10"
@@ -77,6 +91,7 @@
                         >Philiphia Roll (max = 5)</label
                         >
                         <input
+                            name="phil"
                             type="number"
                             class="form-control"
                             max="5"
@@ -86,6 +101,7 @@
                         >Spicy Tuna Roll (max = 5)</label
                         >
                         <input
+                            name="tuna"
                             type="number"
                             class="form-control"
                             max="5"
@@ -95,16 +111,13 @@
                         >California Roll (max = 8)</label
                         >
                         <input
+                            name="cali"
                             type="number"
                             class="form-control"
                             max="8"
                             required
                         />
-                    </div>
-                    <button type="submit" class="btn btn-dark mb-5">Verzenden</button>
-                    <?php
-                    
-                    ?>
+                    <input type="submit" name="Verzenden" value="Verzenden"  class="btn btn-dark my-2">
                 </form>
             </section>
         </section>
@@ -122,11 +135,13 @@
             </footer>
             <footer class="col-6 text-light text-center">
                 <p>
-                    Contactgegevens <br />
-                    Appelstraat 1 <br />
-                    1111AA Fruit <br />
-                    zuzu@gmail.com <br />
-                    06-12345678
+                    Maandag: Gesloten <br />
+                    Dinsdag: 16:00-22:00 <br />
+                    Woensdag: 16:00-22:00 <br />
+                    Donderdag: 16:00-22:00 <br />
+                    Vrijdag: 15:00-22:00 <br />
+                    Zaterdag: 15:00-22:00 <br />
+                    Zondag: Gesloten
                 </p>
             </footer>
         </footer>
